@@ -26,10 +26,23 @@ const Wrapper = styled.div`
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
+  display: flex;
+  align-items: baseline;
+  padding: 12px 32px;
+
+  & > * {
+    /* Gap would be better but it's not supported by Safari */
+    padding: 8px;
+  }
+
+  & > button {
+    align-self: center;
+  }
 `;
 
 const MarketingMessage = styled.span`
   color: ${COLORS.white};
+  margin-right: auto;
 `;
 
 const HelpLink = styled.a`
