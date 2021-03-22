@@ -18,6 +18,7 @@ Breadcrumbs.Crumb = ({ href, children, delegated }) => {
 };
 
 const CrumbWrapper = styled.div`
+  line-height: 2rem;
   &:not(:first-of-type) {
     margin-left: 8px;
 
